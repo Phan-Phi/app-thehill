@@ -25,6 +25,7 @@ export default function Carousel() {
           width="380"
           height="163px"
           style={{ objectFit: "cover", borderRadius: "0.7rem" }}
+          alt="image"
         />
       </Box>
 
@@ -34,6 +35,7 @@ export default function Carousel() {
           width="380"
           height="163px"
           style={{ objectFit: "cover", borderRadius: "0.7rem" }}
+          alt="image"
         />
       </Box>
 
@@ -43,6 +45,7 @@ export default function Carousel() {
           width="380"
           height="163px"
           style={{ objectFit: "cover", borderRadius: "0.7rem" }}
+          alt="image"
         />
       </Box>
     </Slider>

@@ -31,7 +31,9 @@ export default function LogIn() {
       </Box>
 
       <Box marginY="12px">
-        <Button variant="contained">Đăng nhập</Button>
+        <Link href="/home">
+          <Button variant="contained">Đăng nhập</Button>
+        </Link>
       </Box>
 
       <Box>

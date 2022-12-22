@@ -7,12 +7,16 @@ export default function MuiThemeProvider({ children }) {
       primary: {
         main: "#20C2C8",
         light: "#20C2C8",
+        dark: "#9098A1",
       },
       common: { black: "#09101D", white: "#FFFFFF" },
 
       neutral: {
         neutral1: "#2C3A4B",
+        neutral2: "#394452",
+        neutral5: "#858C94",
         neutral7: "#DADEE3",
+        neutral8: "#FF1843",
       },
     },
     typography: {
@@ -32,6 +36,11 @@ export default function MuiThemeProvider({ children }) {
         fontWeight: 600,
         lineHeight: "30px",
       },
+      h6: {
+        fontSize: "18px",
+        fontWeight: 600,
+        lineHeight: "27px",
+      },
 
       subtitle1: {
         fontSize: "16px",
@@ -42,6 +51,11 @@ export default function MuiThemeProvider({ children }) {
         fontSize: "9px",
         fontWeight: 600,
         lineHeight: "13.5px",
+      },
+      body1: {
+        fontSize: "13px",
+        fontWeight: 400,
+        lineHeight: "19.5px",
       },
     },
   });
