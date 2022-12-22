@@ -12,7 +12,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Carousel from "../../components/Carousel";
 import Preferential from "./components/Preferential";
 import News from "./components/News";
-import Advertisement from "./components/advertisement";
 
 export default function Home() {
   const theme = useTheme();
@@ -113,9 +112,7 @@ export default function Home() {
         <News />
       </Grid>
 
-      <Grid item xs={12}>
-        <Advertisement />
-      </Grid>
+      <Grid item xs={12}></Grid>
     </>
   );
 }
