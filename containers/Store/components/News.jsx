@@ -43,7 +43,7 @@ export default function News() {
             paddingLeft: "24px",
             "& .slick-slide": {
               width: "100%",
-              marginRight: "5px",
+              marginRight: "10px",
             },
             "& button": {
               display: "none",
@@ -53,7 +53,13 @@ export default function News() {
             },
             "& .slick-list": {
               padding: "0 !important",
+              "& .slick-track": {
+                marginBottom: "20px",
+              },
             },
+            // "& .slick-track": {
+            //   marginBottom: "20px",
+            // },
             "& .MuiGrid-root": {
               borderRadius: "2rem",
               maxWidth: "100% !important",

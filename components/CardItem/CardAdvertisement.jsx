@@ -1,8 +1,8 @@
-import { Box, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 import Image from "../Image";
 
-const CardNews = () => {
+const CardAdvertisement = () => {
   const theme = useTheme();
 
   return (
@@ -18,11 +18,12 @@ const CardNews = () => {
       <Box>
         <Box sx={{ position: "relative" }}>
           <Image
-            src="/img/Carousel.png"
+            src="/img/Advertisement.png"
             width="100%"
             height="150px"
             alt="image"
           />
+
           <Box
             sx={{
               position: "absolute",
@@ -43,7 +44,7 @@ const CardNews = () => {
         </Box>
 
         <Box>
-          <Typography variant="h6" color={theme.palette.neutral.neutral8}>
+          <Typography variant="h6" color={theme.palette.neutral.neutral9}>
             Lovy Food Restaurant
           </Typography>
           <Typography variant="body1" color={theme.palette.neutral.neutral2}>
@@ -62,4 +63,4 @@ const CardNews = () => {
   );
 };
 
-export default CardNews;
+export default CardAdvertisement;

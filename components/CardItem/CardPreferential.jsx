@@ -8,12 +8,21 @@ const CardPreferential = () => {
   return (
     <Box
       sx={{
-        padding: "0.75rem",
-        backgroundColor: "red",
+        padding: "rem",
+        backgroundColor: "white",
         borderRadius: "1rem",
+        cursor: "pointer",
+        boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 5px",
       }}
     >
-      <Stack direction="row" spacing={1}>
+      <Stack
+        direction="row"
+        spacing={1}
+        // sx={{
+        //   boxShadow:
+        //     "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+        // }}
+      >
         <Box width="30%">
           <Image
             src="/img/thecoffeehouse.png"

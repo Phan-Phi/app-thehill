@@ -25,7 +25,12 @@ export default function TabBottom({ width }) {
         width="100%"
       >
         <HomeRoundedIcon
-          sx={{ color: theme.palette.primary.main, width: 30, height: 30 }}
+          sx={{
+            color: theme.palette.primary.main,
+            width: 30,
+            height: 30,
+            cursor: "pointer",
+          }}
         />
         <Image
           color={theme.palette.primary.dark}
@@ -33,6 +38,7 @@ export default function TabBottom({ width }) {
           width={30}
           height={30}
           alt="image"
+          style={{ cursor: "pointer" }}
         />
         <Image
           color={theme.palette.primary.dark}
@@ -40,9 +46,22 @@ export default function TabBottom({ width }) {
           width={70}
           height={70}
           alt="image"
+          style={{ cursor: "pointer" }}
         />
-        <Image src="/img/map.svg" width={30} height={30} alt="image" />
-        <Image src="/img/person.svg" width={30} height={30} alt="image" />
+        <Image
+          src="/img/map.svg"
+          width={30}
+          height={30}
+          alt="image"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src="/img/person.svg"
+          width={30}
+          height={30}
+          alt="image"
+          style={{ cursor: "pointer" }}
+        />
       </Stack>
     </Box>
   );

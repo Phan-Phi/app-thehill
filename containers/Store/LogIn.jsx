@@ -8,10 +8,18 @@ export default function LogIn() {
   const theme = useTheme();
 
   return (
-    <Box height="100vh">
+    <Box
+      height="100vh"
+      sx={{
+        backgroundImage: "url('/img/Group (2).png')",
+        backgroundSize: "428px, 100%",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <Box
         sx={{
-          marginTop: "7rem",
+          // marginTop: "7rem",
+          paddingTop: "5rem",
           marginBottom: "4.6rem",
           "& div": {
             margin: "0 auto",

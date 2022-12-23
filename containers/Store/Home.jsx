@@ -12,18 +12,37 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Carousel from "../../components/Carousel";
 import Preferential from "./components/Preferential";
 import News from "./components/News";
+import Advertisement from "./components/Advertisement";
 
 export default function Home() {
   const theme = useTheme();
 
   return (
-    <>
-      <Container>
-        <Grid container>
+    <Box
+      sx={{
+        backgroundImage: "url('/img/Background (1).png')",
+        backgroundSize: "428px, 100%",
+        backgroundRepeat: "repeat",
+      }}
+    >
+      <Container
+        sx={{
+          backgroundImage: "url('/img/Background Top.png')",
+          backgroundSize: "428px, 100%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Grid container paddingTop="2rem">
           <Grid item xs={12}>
-            <Stack direction="row" marginBottom="2rem">
+            <Stack
+              direction="row"
+              marginBottom="2rem"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               <Stack direction="row" spacing={1} alignItems="center">
                 <Image
+                  style={{ cursor: "pointer" }}
                   src="/img/Image.png"
                   width={62}
                   height={62}
@@ -38,14 +57,22 @@ export default function Home() {
                 </Box>
               </Stack>
 
-              <Box>
+              <Stack direction="row" spacing={1}>
                 <Image
-                  src="/img/Auto Layout Horizontal.png"
-                  width={40}
-                  height={40}
+                  src="/img/history.svg"
+                  width={24}
+                  height={24}
+                  alt="image"
+                  style={{ cursor: "pointer" }}
+                />
+                <Image
+                  style={{ cursor: "pointer" }}
+                  src="/img/notifications none.svg"
+                  width={24}
+                  height={24}
                   alt="image"
                 />
-              </Box>
+              </Stack>
             </Stack>
           </Grid>
 
@@ -56,6 +83,9 @@ export default function Home() {
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
                 backgroundColor: "white",
                 borderRadius: "1.5rem",
+                backgroundImage: "url('/img/point.png')",
+                backgroundSize: "428px, 100%",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <Box padding="1.5rem">
@@ -67,6 +97,7 @@ export default function Home() {
                 padding="1rem 1.5rem"
                 direction="row"
                 sx={{
+                  cursor: "pointer",
                   color: theme.palette.common.white,
                   borderRadius: "0 0 1.5rem 1.5rem",
                   background:
@@ -112,7 +143,9 @@ export default function Home() {
         <News />
       </Grid>
 
-      <Grid item xs={12}></Grid>
-    </>
+      <Grid item xs={12}>
+        <Advertisement />
+      </Grid>
+    </Box>
   );
 }

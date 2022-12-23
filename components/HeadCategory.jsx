@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Grid,
-  Stack,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import Image from "./Image";
 

@@ -21,7 +21,7 @@ export default function Carousel() {
     <Slider {...settings}>
       <Box sx={{ backgroundColor: "red", borderRadius: "0.7rem" }}>
         <Image
-          src="/img/Carousel.png"
+          src="/img/banner1-02.png"
           width="380"
           height="163px"
           style={{ objectFit: "cover", borderRadius: "0.7rem" }}
@@ -41,7 +41,7 @@ export default function Carousel() {
 
       <Box sx={{ backgroundColor: "red", borderRadius: "0.7rem" }}>
         <Image
-          src="/img/Carousel.png"
+          src="/img/banner1-02.png"
           width="380"
           height="163px"
           style={{ objectFit: "cover", borderRadius: "0.7rem" }}

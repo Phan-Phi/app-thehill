@@ -17,6 +17,7 @@ export default function MuiThemeProvider({ children }) {
         neutral5: "#858C94",
         neutral7: "#DADEE3",
         neutral8: "#FF1843",
+        neutral9: "#FFB800",
       },
     },
     typography: {
