@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 0 auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* cho Chrome, Safari, and Opera */
 }
 
 body {

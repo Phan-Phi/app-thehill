@@ -1,4 +1,11 @@
-import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import Link from "next/link";
 import FormInput from "../../components/FormControl/FormInput";
 import FormPassWord from "../../components/FormControl/FormPassword";
@@ -8,9 +15,10 @@ export default function LogIn() {
   const theme = useTheme();
 
   return (
-    <Box
+    <Container
       height="100vh"
       sx={{
+        paddingBottom: "3rem",
         backgroundImage: "url('/img/Group (2).png')",
         backgroundSize: "428px, 100%",
         backgroundRepeat: "repeat",
@@ -63,6 +71,6 @@ export default function LogIn() {
           </Link>
         </Stack>
       </Box>
-    </Box>
+    </Container>
   );
 }

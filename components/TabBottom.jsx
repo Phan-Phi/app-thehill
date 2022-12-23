@@ -2,14 +2,16 @@ import { Box, Stack, useTheme } from "@mui/material";
 import React from "react";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Image from "./Image";
+import { useRouter } from "next/router";
 
 export default function TabBottom({ width }) {
   const theme = useTheme();
+  const router = useRouter();
 
   return (
     <Box
       sx={{
-        display: "flex",
+        display: router.pathname == "/" ? "none" : "flex",
         width: width,
         height: "5.5rem",
         position: "fixed",
