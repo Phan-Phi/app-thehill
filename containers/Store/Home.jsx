@@ -24,7 +24,7 @@ export default function Home() {
     <Box
       ref={ref}
       sx={{
-        height: "781px",
+        height: "932px",
         overflow: "scroll",
         backgroundImage: "url('/img/Background (1).png')",
         backgroundSize: "428px, 100%",
