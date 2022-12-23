@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import HeadCategory from "../../../components/HeadCategory";
 import { COLOR_HEAD_CATEGORY, SVG_HEAD_CATEGORY } from "../../../contants";
@@ -17,6 +17,28 @@ const settings = {
   centerMode: true,
 };
 
+const arr = [
+  {
+    img: "/img/thecoffeehouse.png",
+    title: "The Coffee House",
+    text: "Thức Uống",
+    pointer: "-30%",
+  },
+
+  {
+    img: "/img/phuclong.jpeg",
+    title: "Phuc Long",
+    text: "Thức Uống",
+    pointer: "-20%",
+  },
+  {
+    img: "/img/gongcha.jpeg",
+    title: "Gong Cha",
+    text: "Thức Uống",
+    pointer: "-50%",
+  },
+];
+
 export default function Preferential() {
   const slickRef = useRef();
 
@@ -25,6 +47,17 @@ export default function Preferential() {
       slickRef.current.innerSlider.list.style.padding = "0 75px 0 0";
     }
   }, [slickRef]);
+
+  const renderItem = useCallback(() => {
+    return arr.map((el, idx) => {
+      console.log("🚀 ~ file: Preferential.jsx:53 ~ returnarr.map ~ el", el);
+      return (
+        <Grid item xs={6}>
+          <CardPreferential key={idx} el={el} />
+        </Grid>
+      );
+    });
+  }, []);
 
   return (
     <Grid container>
@@ -65,6 +98,7 @@ export default function Preferential() {
           }}
         >
           <Slider {...settings}>
+            {renderItem}
             <Grid item xs={6}>
               <CardPreferential />
             </Grid>

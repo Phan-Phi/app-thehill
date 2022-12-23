@@ -13,7 +13,6 @@ import Carousel from "../../components/Carousel";
 import Preferential from "./components/Preferential";
 import News from "./components/News";
 import Advertisement from "./components/Advertisement";
-import TabBottom from "../../components/TabBottom";
 import { useMeasure } from "react-use";
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
       className="home"
       ref={ref}
       sx={{
-        height: "932px",
+        height: "960px",
         overflow: "scroll",
         backgroundImage: "url('/img/Background (1).png')",
         backgroundSize: "428px, 100%",
@@ -48,37 +47,47 @@ export default function Home() {
               justifyContent="space-between"
             >
               <Stack direction="row" spacing={1} alignItems="center">
-                <Image
-                  style={{ cursor: "pointer" }}
-                  src="/img/Image.png"
-                  width={62}
-                  height={62}
-                  alt="image"
-                />
+                <Box>
+                  <Image
+                    style={{ cursor: "pointer" }}
+                    src="/img/Image.png"
+                    width={62}
+                    height={62}
+                    alt="image"
+                  />
+                </Box>
+
                 <Box>
                   <Typography variant="h5">Xin chào, Nam 👋</Typography>
-                  <Stack direction="row">
+                  <Stack direction="row" alignItems="center">
                     <Typography variant="subtitle2">CẬP NHẬT </Typography>
-                    <ChevronRightIcon />
+                    <ChevronRightIcon
+                      sx={{ color: "black", fontSize: "1rem" }}
+                    />
                   </Stack>
                 </Box>
               </Stack>
 
               <Stack direction="row" spacing={1}>
-                <Image
-                  src="/img/history.svg"
-                  width={24}
-                  height={24}
-                  alt="image"
-                  style={{ cursor: "pointer" }}
-                />
-                <Image
-                  style={{ cursor: "pointer" }}
-                  src="/img/notifications none.svg"
-                  width={24}
-                  height={24}
-                  alt="image"
-                />
+                <Box>
+                  <Image
+                    src="/img/history.svg"
+                    width={24}
+                    height={24}
+                    alt="image"
+                    style={{ cursor: "pointer" }}
+                  />
+                </Box>
+
+                <Box>
+                  <Image
+                    style={{ cursor: "pointer" }}
+                    src="/img/notifications none.svg"
+                    width={24}
+                    height={24}
+                    alt="image"
+                  />
+                </Box>
               </Stack>
             </Stack>
           </Grid>
@@ -153,8 +162,6 @@ export default function Home() {
       <Grid item xs={12}>
         <Advertisement />
       </Grid>
-
-      {/* <TabBottom width={width} /> */}
     </Box>
   );
 }

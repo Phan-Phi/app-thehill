@@ -3,6 +3,7 @@ import React from "react";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import Image from "./Image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function TabBottom({ width }) {
   const theme = useTheme();
@@ -57,13 +58,15 @@ export default function TabBottom({ width }) {
           alt="image"
           style={{ cursor: "pointer" }}
         />
-        <Image
-          src="/img/person.svg"
-          width={30}
-          height={30}
-          alt="image"
-          style={{ cursor: "pointer" }}
-        />
+        <Link href="/">
+          <Image
+            src="/img/person.svg"
+            width={30}
+            height={30}
+            alt="image"
+            style={{ cursor: "pointer", "& rect": { fill: "red" } }}
+          />
+        </Link>
       </Stack>
     </Box>
   );

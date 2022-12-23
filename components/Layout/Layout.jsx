@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         position: "relative",
       }}
     >
-      <StatusBar />
+      {/* <StatusBar /> */}
       {children}
 
       <TabBottom width={width} />
