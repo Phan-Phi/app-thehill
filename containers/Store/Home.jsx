@@ -22,6 +22,7 @@ export default function Home() {
 
   return (
     <Box
+      className="home"
       ref={ref}
       sx={{
         height: "932px",

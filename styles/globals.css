@@ -39,6 +39,11 @@ a {
   color: white !important;
 }
 
+.home::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
