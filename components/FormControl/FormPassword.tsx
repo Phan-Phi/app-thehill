@@ -4,18 +4,22 @@ import {
   IconButton,
   InputAdornment,
   InputBase,
-  InputLabel,
-  OutlinedInput,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Visibility from "@mui/icons-material/Visibility";
 
 export default function FormPassWord({ label, placeholder }) {
+  const [isvalue, setIsValue] = useState("t-solution");
+
   return (
     <FormControl fullWidth>
       <FormLabel>{label}</FormLabel>
 
       <InputBase
+        onChange={(e) => {
+          setIsValue(e.target.value);
+        }}
+        value={isvalue}
         fullWidth
         id="outlined-adornment-password"
         type="password"
