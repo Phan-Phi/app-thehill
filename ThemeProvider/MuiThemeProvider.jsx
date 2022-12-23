@@ -82,11 +82,14 @@ export default function MuiThemeProvider({ children }) {
             borderRadius: "2rem",
             color: "white",
             backgroundColor: "rgba(32, 194, 200, 0.6)",
-            // background:
-            //   "linear-gradient(to right, rgba(169,208,113,0),rgba(136,173,215,1))",
+
             fontSize: "18px",
             fontWeight: 600,
             textTransform: "none",
+
+            "& :hover": {
+              backgroundColor: "rgba(32, 194, 200, 0.6)",
+            },
           },
         },
       },

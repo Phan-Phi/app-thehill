@@ -13,13 +13,19 @@ import Carousel from "../../components/Carousel";
 import Preferential from "./components/Preferential";
 import News from "./components/News";
 import Advertisement from "./components/Advertisement";
+import TabBottom from "../../components/TabBottom";
+import { useMeasure } from "react-use";
 
 export default function Home() {
   const theme = useTheme();
+  const [ref, { width }] = useMeasure();
 
   return (
     <Box
+      ref={ref}
       sx={{
+        height: "781px",
+        overflow: "scroll",
         backgroundImage: "url('/img/Background (1).png')",
         backgroundSize: "428px, 100%",
         backgroundRepeat: "repeat",
@@ -135,17 +141,19 @@ export default function Home() {
         </Grid>
       </Container>
 
-      <Grid item xs={12}>
+      <Box>
         <Preferential />
-      </Grid>
+      </Box>
 
-      <Grid item xs={12}>
+      <Box>
         <News />
-      </Grid>
+      </Box>
 
       <Grid item xs={12}>
         <Advertisement />
       </Grid>
+
+      {/* <TabBottom width={width} /> */}
     </Box>
   );
 }
