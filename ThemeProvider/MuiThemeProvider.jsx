@@ -87,8 +87,8 @@ export default function MuiThemeProvider({ children }) {
             fontWeight: 600,
             textTransform: "none",
 
-            "& :hover": {
-              backgroundColor: "rgba(32, 194, 200, 0.6)",
+            "&:hover": {
+              backgroundColor: "rgba(32, 194, 200, 0.6) !important",
             },
           },
         },
